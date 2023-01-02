@@ -40,7 +40,7 @@ function Image({
             : "https://yesoffice.com.vn/wp-content/themes/zw-theme//assets/images/default.jpg"
     );
     var id = localStorage.getItem("id_element") - 1;
-    localStorage.setItem("id_element", id + 3);
+    localStorage.setItem("id_element", id - 151 + 2134);
     function changeIMG() {
         let input = document.createElement("input");
         input.type = "file";

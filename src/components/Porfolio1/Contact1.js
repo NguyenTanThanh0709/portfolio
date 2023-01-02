@@ -27,6 +27,7 @@ export default function Contact1() {
                 classname="text-[25px]"
             ></Box>
             <Image
+                datakey={1010}
                 x={0.05 * state.width}
                 y={0.25 * state.height}
                 width={"300px"}

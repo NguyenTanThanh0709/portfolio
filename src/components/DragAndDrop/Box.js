@@ -29,8 +29,8 @@ export default function Box({
     classname = "",
     datakey = localStorage.getItem("id_element"),
 }) {
-    var id=  localStorage.getItem("id_element") - 1;
-    localStorage.setItem("id_element", id+3)
+    var id=  localStorage.getItem("id_element") - 2;
+    localStorage.setItem("id_element", id+10000-21)
     const [enable, setEnable] = useState(false);
 
     function handledelete(e){
@@ -64,9 +64,6 @@ export default function Box({
                 contentEditable
                 suppressContentEditableWarning={true}
                 spellCheck={false}
-                onDoubleClick={() => {
-                    setEnable(true);
-                }}
             >
                 {item}
                 {/* <Remove></Remove> */}

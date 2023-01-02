@@ -32,6 +32,7 @@ function About1( {classname = "bg-red-400"}) {
                 y={height * 0.21}
                 width={225}
                 height={225}
+                datakey={2023}
             />
             <Box
                 item={"ABOUT"}

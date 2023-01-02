@@ -17,8 +17,8 @@ const style1 = {
 
 
 
-var id=  localStorage.getItem("id_element") - 1;
-    localStorage.setItem("id_element", id+3)
+var id=  1111;
+    localStorage.setItem("id_element", id)
 
 
     function handledelete(e){
@@ -40,7 +40,7 @@ export default ({
     x = 50,
     y = 50,
     classname = "",
-    datakey = localStorage.getItem("id_element"),
+    datakey = 1121,
     parent = "parent"
 }) => (
   <Rnd
@@ -55,11 +55,11 @@ export default ({
   minHeight={20}
   grid={[50, 50]}
   bounds={parent.parent}
-  id= {datakey}
+  id= {1121}
 >
-  <div keyIndex= {datakey} className="relative congviec group border__full w-full h-full">
+  <div keyIndex= {1121} className="relative congviec group border__full w-full h-full">
       <ImHappy2 className={`w-full h-full border-1 ${classname}`} />
-      <Plusbin keyIndex= {datakey} hiddenPlus = "hidden" classname="dieukhien top-0 opacity-0 -left-7" onClickfuncDELETE={handledelete}/>
+      <Plusbin keyIndex= {1121} hiddenPlus = "hidden" classname="dieukhien top-0 opacity-0 -left-7" onClickfuncDELETE={handledelete}/>
   </div>
   
 
