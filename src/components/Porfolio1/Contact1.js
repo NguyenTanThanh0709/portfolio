@@ -17,17 +17,19 @@ export default function Contact1() {
     return (
         <div
             id="movable"
-            className="changeClass relative flex justify-center items-center w-full h-[600px] text-white"
+            className="changeClass relative flex justify-center items-center w-full h-[600px] text-white/80"
         >
             <Box
                 item={"CONTACT US"}
                 parent={"#movable"}
+                color1="text-gray-300"
+                width={231}
                 x={0.1 * state.width}
                 y={0.15 * state.height}
                 classname="text-[25px]"
             ></Box>
             <Image
-                datakey={1010}
+                datakey={801}
                 x={0.05 * state.width}
                 y={0.25 * state.height}
                 width={"300px"}
@@ -38,6 +40,7 @@ export default function Contact1() {
                 item={"Creative House"}
                 parent={"#movable"}
                 width="200px"
+                color1="text-gray-300"
                 x={0.5 * state.width}
                 y={0.3 * state.height}
                 classname="text-[25px]"
@@ -48,6 +51,7 @@ export default function Contact1() {
                 parent={"#movable"}
                 width="50px"
                 x={0.5 * state.width}
+                color1="text-gray-300"
                 y={0.4 * state.height}
                 classname="text-[30px]"
             ></Box>
@@ -56,12 +60,14 @@ export default function Contact1() {
                 classname="text-lg"
                 parent={"#movable"}
                 width={"450px"}
+                color1="text-gray-300"
                 x={0.55 * state.width}
                 y={0.4 * state.height}
             ></Box>
             <Box
                 item={<BiMailSend />}
                 parent={"#movable"}
+                color1="text-gray-300"
                 width="50px"
                 x={0.5 * state.width}
                 y={0.5 * state.height}
@@ -74,6 +80,7 @@ export default function Contact1() {
                 parent={"#movable"}
                 width={"400px"}
                 x={0.55 * state.width}
+                color1="text-gray-300"
                 y={0.5 * state.height}
             ></Box>
             <Box
@@ -81,6 +88,7 @@ export default function Contact1() {
                 parent={"#movable"}
                 width="50px"
                 x={0.5 * state.width}
+                color1="text-gray-300"
                 classname="text-[30px]"
                 y={0.6 * state.height}
             ></Box>
@@ -90,6 +98,7 @@ export default function Contact1() {
                 parent={"#movable"}
                 width={"400px"}
                 x={0.55 * state.width}
+                color1="text-gray-300"
                 y={0.6 * state.height}
             ></Box>
         </div>

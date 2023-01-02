@@ -8,7 +8,7 @@ function About1( {classname = "bg-red-400"}) {
     console.log(localStorage.getItem("id_element"));
 
     return (
-        <div className={`changeClass w-full h-[600px] relative  text-red-500 ${classname}`}>
+        <div  className={`changeClass w-full h-[600px] relative  text-red-500 ${classname}`}>
             <Box
             
                 item={"By TSIMPLE"}
@@ -16,14 +16,16 @@ function About1( {classname = "bg-red-400"}) {
                 height={40}
                 x={width * 0.034}
                 y={height * 0.034}
+                color1="text-rose-600"
                 classname={"font-bold text-3xl"}
             />
             <Box
                 item={"CONTENT CREATOR"}
-                width={300}
+                width={350}
                 height={40}
                 x={width * 0.55}
                 y={height * 0.034}
+                color1="text-rose-600"
                 classname={"font-bold text-3xl"}
             />
             <ThanhKE y={width * 0.1} x={height * 0.085} width={825}  />
@@ -31,6 +33,7 @@ function About1( {classname = "bg-red-400"}) {
                 x={width * 0.67}
                 y={height * 0.21}
                 width={225}
+                
                 height={225}
                 datakey={2023}
             />
@@ -38,6 +41,7 @@ function About1( {classname = "bg-red-400"}) {
                 item={"ABOUT"}
                 width={210}
                 height={40}
+                color1="text-rose-600"
                 x={width * 0.034}
                 y={height * 0.32487309644}
                 classname={"font-bold text-4xl"}
@@ -49,6 +53,7 @@ function About1( {classname = "bg-red-400"}) {
                 width={400}
                 height={140}
                 x={width * 0.034}
+                color1="text-rose-600"
                 y={height * 0.40947546531}
                 classname={"font-bold text-base"}
             />
@@ -58,6 +63,7 @@ function About1( {classname = "bg-red-400"}) {
                 height={40}
                 x={width * 0.034}
                 y={height * 0.68020304568}
+                color1="text-rose-600"
                 classname={"font-bold text-3xl"}
             />
             <Box
@@ -65,6 +71,7 @@ function About1( {classname = "bg-red-400"}) {
                 width={210}
                 height={40}
                 x={width * 0.034}
+                color1="text-rose-600"
                 y={height * 0.75972927242}
                 classname={"font-bold text-3xl"}
             />
@@ -72,6 +79,7 @@ function About1( {classname = "bg-red-400"}) {
                 item={"+521"}
                 width={210}
                 height={40}
+                color1="text-rose-600"
                 x={width * 0.58341968911}
                 y={height * 0.68020304568}
                 classname={"font-bold text-3xl"}
@@ -79,6 +87,7 @@ function About1( {classname = "bg-red-400"}) {
             <Box
                 item={"SAD"}
                 width={210}
+                color1="text-rose-600"
                 height={40}
                 x={width * 0.58341968911}
                 y={height * 0.75972927242}

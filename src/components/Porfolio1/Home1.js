@@ -7,18 +7,20 @@ function Home1({classname = "bg-yellow-500"}) {
         <div className={`w-full h-[600px] relative  changeClass ${classname}` }>
             <Box
                 item={"BRAND"}
-                width={110}
+                width={150}
                 height={40}
                 x={width * 0.0207253886}
                 y={height * 0.09055876685}
+                color1="text-rose-600"
                 classname={"text-rose-600 font-bold text-3xl"}
             />
             <Box
                 item={"CONTENT CREATOR"}
-                width={300}
+                width={370}
                 height={40}
                 x={width * 0.2518134715}
                 y={height * 0.09055876685}
+                color1="text-rose-600"
                 classname={"text-rose-600 font-bold text-3xl"}
             />
             <Box
@@ -27,6 +29,7 @@ function Home1({classname = "bg-yellow-500"}) {
                 height={40}
                 x={width * 0.66632124352}
                 y={height * 0.09055876685}
+                color1="text-rose-600"
                 classname={"text-rose-600 font-bold text-3xl"}
             />
 
@@ -35,6 +38,7 @@ function Home1({classname = "bg-yellow-500"}) {
                 height={200}
                 x={width * 0.70466321243}
                 y={height * 0.28709055876}
+                color1="text-green-600"
                 classname={"text-green-600"}
             />
             <Box
@@ -43,14 +47,16 @@ function Home1({classname = "bg-yellow-500"}) {
                 height={100}
                 x={width * 0.0207253886}
                 y={height * 0.20709055876}
+                color1="text-rose-600"
                 classname={"text-rose-600 font-bold text-8xl"}
             />
             <Box
                 item={"PORTFOLIO"}
-                width={560}
+                width={580}
                 height={100}
                 x={width * 0.0207253886}
                 y={height * 0.35096339113}
+                color1="text-green-600"
                 classname={"font-bold text-8xl text-green-600"}
             />
             <Box
@@ -61,6 +67,7 @@ function Home1({classname = "bg-yellow-500"}) {
                 height={100}
                 x={width * 0.0207253886}
                 y={height * 0.50988439306}
+                color1="text-green-600"
                 classname={"text-lg text-green-600"}
             />
             <Box
@@ -69,6 +76,7 @@ function Home1({classname = "bg-yellow-500"}) {
                 height={40}
                 x={width * 0.0207253886}
                 y={height * 0.68666666666}
+                color1="text-green-600"
                 classname={"text-green-600 font-bold text-xl"}
             />
             <Box
@@ -77,6 +85,7 @@ function Home1({classname = "bg-yellow-500"}) {
                 height={40}
                 x={820 - 100 - 40}
                 y={height * 0.68666666666}
+                color1="text-green-600"
                 classname={"text-green-600 font-bold text-xl"}
             />
         </div>
