@@ -6,6 +6,8 @@ function CreatePortfolio() {
     const [back, setback] = useState(localStorage.getItem("backgroungColor"));
     const addNewPage = () => {
         setPage([...page, page[page.length - 1] + 1]);
+        let id = (localStorage.getItem("id_sample") - 1) + 2;
+        localStorage.setItem("id_sample", id);
     };
     // const arr =
     //     {
@@ -27,6 +29,8 @@ function CreatePortfolio() {
     // };
     // console.log(document.styleSheets);
     localStorage.setItem("id_element", 152);
+    localStorage.setItem("id_element__icon", 101);
+    
     return (
         <div className="bg-slate-100 flex">
             <Sidebar></Sidebar>

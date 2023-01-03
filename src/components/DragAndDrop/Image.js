@@ -12,6 +12,7 @@ function Image({
     classname = "",
     datakey = localStorage.getItem("id_element"),
     src,
+    checkid = 2,
 }) {
     function previewFile(e) {
         // const preview = document.querySelector("img");
@@ -39,7 +40,7 @@ function Image({
             ? src
             : "https://yesoffice.com.vn/wp-content/themes/zw-theme//assets/images/default.jpg"
     );
-    var id = localStorage.getItem("id_element") - 1;
+    var id = (localStorage.getItem("id_element") - 1) * checkid;
     localStorage.setItem("id_element", id - 151 + 2134);
     function changeIMG() {
         let input = document.createElement("input");

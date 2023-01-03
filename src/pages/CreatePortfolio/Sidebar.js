@@ -295,8 +295,8 @@ export default function Sidebar() {
             <div className="h-screen bg-cyan-900 text-slate-400 pt-[30px] relative overflow-hidden">
                 <ul className="absolute bg-cyan-800">
                     <Link to={config.routes.home}>
-                        <div className="flex flex-col justify-center items-center bg-cyan-900 h-[98px] cursor-pointer hover:bg-cyan-800 group">
-                            <button className="mt-[5px] flex justify-center items-center w-[30px] h-[30px] rounded-[50%] bg-white">
+                        <div className="flex flex-col justify-center items-center bg-cyan-900 h-[85px] cursor-pointer hover:bg-cyan-800 group">
+                            <button className="mt-[0px] flex justify-center items-center w-[30px] h-[30px] rounded-[50%] bg-white">
                                 <HiHome className="group-hover:text-black text-[24px]"></HiHome>
                             </button>
                             <span className="text-[15px] group-hover:text-white">
@@ -305,8 +305,8 @@ export default function Sidebar() {
                         </div>
                     </Link>
                     <Link to={config.routes.SamplePortfolio}>
-                        <div className="flex flex-col justify-center items-center bg-cyan-900 h-[98px] cursor-pointer hover:bg-cyan-800 group">
-                            <button className="mt-[5px] flex justify-center items-center w-[30px] h-[30px] rounded-[50%] bg-white">
+                        <div className="flex flex-col justify-center items-center bg-cyan-900 h-[85px] cursor-pointer hover:bg-cyan-800 group">
+                            <button className="mt-[0px] flex justify-center items-center w-[30px] h-[30px] rounded-[50%] bg-white">
                                 <GiBlackBook className="group-hover:text-black text-[24px]"></GiBlackBook>
                             </button>
                             <span className="text-[15px] group-hover:text-white">
@@ -317,7 +317,7 @@ export default function Sidebar() {
                     {navItems.map(({ id, title, icon }) => (
                         <li
                             id={title}
-                            className="li-items h-[98px] w-[98px] flex flex-col justify-center items-center cursor-pointer hover:text-white bg-cyan-900"
+                            className="li-items h-[85px] w-[98px] flex flex-col justify-center items-center cursor-pointer hover:text-white bg-cyan-900"
                             onClick={(event) => handleOpen(event, title)}
                             key={id}
                         >
@@ -326,10 +326,10 @@ export default function Sidebar() {
                         </li>
                     ))}
                     <div
-                        className="group h-[98px] w-[98px] flex flex-col justify-center items-center bg-cyan-900 cursor-pointer hover:text-white bg-cyan-900"
+                        className="group h-[85px] w-[98px] flex flex-col justify-center items-center bg-cyan-900 cursor-pointer hover:text-white bg-cyan-900"
                         onClick={handleDownload}
                     >
-                        <button className="mt-[5px] w-[30px] h-[30px] rounded-[50%] bg-white flex justify-center items-center">
+                        <button className="mt-[0px] w-[30px] h-[30px] rounded-[50%] bg-white flex justify-center items-center">
                             <BiDownload className="group-hover:text-black text-[24px]"></BiDownload>
                         </button>
                         <span className="text-[15px]">Download</span>

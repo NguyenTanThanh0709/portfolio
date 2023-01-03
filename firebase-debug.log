@@ -1,0 +1,102 @@
+[debug] [2023-01-03T14:27:53.639Z] ----------------------------------------------------------------------
+[debug] [2023-01-03T14:27:53.641Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-01-03T14:27:53.641Z] CLI Version:   11.19.0
+[debug] [2023-01-03T14:27:53.641Z] Platform:      win32
+[debug] [2023-01-03T14:27:53.642Z] Node Version:  v18.12.1
+[debug] [2023-01-03T14:27:53.653Z] Time:          Tue Jan 03 2023 21:27:53 GMT+0700 (Indochina Time)
+[debug] [2023-01-03T14:27:53.653Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-03T14:27:53.712Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-03T14:27:53.713Z] > authorizing via signed-in user (nuocduaproo@gmail.com)
+[debug] [2023-01-03T14:27:53.713Z] [iam] checking project tsimple-384dd for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-01-03T14:27:53.715Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tsimple-384dd:testIamPermissions [none]
+[debug] [2023-01-03T14:27:53.715Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tsimple-384dd:testIamPermissions x-goog-quota-user=projects/tsimple-384dd
+[debug] [2023-01-03T14:27:53.715Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tsimple-384dd:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-01-03T14:27:55.181Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tsimple-384dd:testIamPermissions 200
+[debug] [2023-01-03T14:27:55.181Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tsimple-384dd:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-01-03T14:27:55.182Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tsimple-384dd [none]
+[debug] [2023-01-03T14:27:55.809Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tsimple-384dd 200
+[debug] [2023-01-03T14:27:55.810Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tsimple-384dd {"projectId":"tsimple-384dd","projectNumber":"464046716285","displayName":"tsimple","name":"projects/tsimple-384dd","resources":{"hostingSite":"tsimple-384dd"},"state":"ACTIVE","etag":"1_f82a3279-8e20-470e-a4c6-74cc21549263"}
+[info] 
+[info] === Deploying to 'tsimple-384dd'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-01-03T14:27:55.820Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tsimple-384dd/versions [none]
+[debug] [2023-01-03T14:27:55.820Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tsimple-384dd/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-01-03T14:27:57.188Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tsimple-384dd/versions 200
+[debug] [2023-01-03T14:27:57.188Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tsimple-384dd/versions {"name":"projects/464046716285/sites/tsimple-384dd/versions/7ba6151338fb1f4b","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[tsimple-384dd]: beginning deploy... 
+[info] i  hosting[tsimple-384dd]: found 27 files in build 
+[debug] [2023-01-03T14:28:16.930Z] [hosting] uploading with 200 concurrency
+[debug] [2023-01-03T14:28:18.735Z] [hosting] hash cache [YnVpbGQ] stored for 27 files
+[debug] [2023-01-03T14:28:18.736Z] [hosting][hash queue][FINAL] {"max":1797,"min":5,"avg":100.92592592592592,"active":0,"complete":27,"success":27,"errored":0,"retried":0,"total":27,"elapsed":1803}
+[debug] [2023-01-03T14:28:18.738Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/464046716285/sites/tsimple-384dd/versions/7ba6151338fb1f4b:populateFiles [none]
+[debug] [2023-01-03T14:28:18.738Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/464046716285/sites/tsimple-384dd/versions/7ba6151338fb1f4b:populateFiles {"files":{"/favicon.ico":"eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9","/logo192.png":"3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","/logo512.png":"ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","/manifest.json":"5c997de1364b8be939319fa9209abd77f2caf7f8844999a9e2e9173f844e7840","/robots.txt":"b2090cf9761ef60aa06e4fab97679bd43dfa5e5df073701ead5879d7c68f1ec5","/asset-manifest.json":"7508bb9128027cd1a81128459ca904ce5b86be7ea95e44500a15f37d8abb592a","/index.html":"1f2f271f5d0b26cd5da4d406ae4695602b5dd81bc2089c608cbfefcf17426226","/static/js/787.e8a52378.chunk.js":"666684a24078ee24849ee6cf844c2eb5ff3c7faf9dcad1e60fe5963d513f391f","/static/js/787.e8a52378.chunk.js.map":"2b6551aa7c3c3c68a64e32a96abdb22fe01ca7fa6feefcda9553d3853df2db5d","/static/js/main.3b5d0ed8.js.LICENSE.txt":"2d85c1f11596640881f569201f38aaeaaaa09c85d81ae2c4ca3185d5fb28129c","/static/css/main.c1781ad2.css":"462fe12cde8e17d1adc1c66bc338ef94b6b923f13567825346ef7ccf6d0701a6","/static/css/main.c1781ad2.css.map":"ad3380505d610e0dd7b7fd6a3edebd5e090496420495ec4745e6718072354d7c","/static/media/block2.1f8008c4243abead221e.png":"a98e9defa3b56aa86ff999227b3e32cbcec898f621e2df0b0a585b02b01802ec","/static/media/block3.249d43a2237e6ebda121.png":"b2d5e6a6bd3f1fa262cab0c628f1d9cbe27883c2e6c841a65e4d26e822a8c3f7","/static/media/block4.23f892d3208fa3091470.png":"90695234ba7e3694100fd536fd8175559d54f62ee159d651c167ca019115f1c8","/static/media/about1.b8b8eabf4167efc99b36.png":"657c6c58443585192256124934ac7aadf804ba914d0c1e0668259864f0af51e2","/static/media/hom1.ddfe09a86167e5638322.png":"ecfda7827ce0d1011319889bb9f1f363a0e2e3730398fdafaa91edd99cf5c7fd","/static/media/sample-bg-2.b36de9ed56b6bdda5b68.jpg":"a414879e016ab2be30fb5db7d26752efb116d01826a69dcce601c6882b9f32ec","/static/media/sample2.d99ccbbf68c29a16c0c1.png":"1877784edd7d3d669a704c5cb8706a4f0bce850e068e12fc14f4b1942843a452","/static/media/avatar-sample4.19cfa8c9dcd67bb7cd04.jpg":"f2ee0b038c04b3ea0f7accc412f579d7d0758213421743fbc3c902fb2ed0c752","/static/media/bg-home.964aa7fe8c2559bdd2c3.jpg":"05dc3620d54ae0aa733455730c93b56ed72d9153b942e37fc053d18044dd57b2","/static/media/sample1.19d274ebc9b0ec4b80f4.png":"3053428e9723114fbc32b9f32a25bf3562c95b19c18ce84d80eff37a796e908a","/static/media/sample3.cdcb1bf49714703e0a23.png":"7132ef3f40513220be16574c8e57bd37beca4d8829c862925ee7769b40f4bb82","/static/js/main.3b5d0ed8.js":"8d53018b560e5035cc6f89378670f9cf7c5bf8037fcd0b266cb0d63da530ebac","/static/media/contact1.6faddec107ab4953b110.png":"753dccb9c291d8b60be78538c38c76709cc52e456bc8e2319d94f5e5b43bdcfb","/static/media/bg-sample3.2679a673bfb9a5576c0e.jpg":"889607caabbdaa21f990369c45bbbeb7a9a2b113cc2b057905f3917cb729a216","/static/js/main.3b5d0ed8.js.map":"60b982c407a23ea3a312c531a92cb0e1b257fc9715abcc661ec1a8d03dbeae7f"}}
+[debug] [2023-01-03T14:28:19.826Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/464046716285/sites/tsimple-384dd/versions/7ba6151338fb1f4b:populateFiles 200
+[debug] [2023-01-03T14:28:19.827Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/464046716285/sites/tsimple-384dd/versions/7ba6151338fb1f4b:populateFiles {"uploadRequiredHashes":["7508bb9128027cd1a81128459ca904ce5b86be7ea95e44500a15f37d8abb592a","1f2f271f5d0b26cd5da4d406ae4695602b5dd81bc2089c608cbfefcf17426226","8d53018b560e5035cc6f89378670f9cf7c5bf8037fcd0b266cb0d63da530ebac","60b982c407a23ea3a312c531a92cb0e1b257fc9715abcc661ec1a8d03dbeae7f"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/tsimple-384dd/versions/7ba6151338fb1f4b/files"}
+[debug] [2023-01-03T14:28:19.828Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/tsimple-384dd/versions/7ba6151338fb1f4b/files/7508bb9128027cd1a81128459ca904ce5b86be7ea95e44500a15f37d8abb592a [none]
+[debug] [2023-01-03T14:28:19.828Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/tsimple-384dd/versions/7ba6151338fb1f4b/files/7508bb9128027cd1a81128459ca904ce5b86be7ea95e44500a15f37d8abb592a [stream]
+[debug] [2023-01-03T14:28:19.830Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/tsimple-384dd/versions/7ba6151338fb1f4b/files/1f2f271f5d0b26cd5da4d406ae4695602b5dd81bc2089c608cbfefcf17426226 [none]
+[debug] [2023-01-03T14:28:19.830Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/tsimple-384dd/versions/7ba6151338fb1f4b/files/1f2f271f5d0b26cd5da4d406ae4695602b5dd81bc2089c608cbfefcf17426226 [stream]
+[debug] [2023-01-03T14:28:19.832Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/tsimple-384dd/versions/7ba6151338fb1f4b/files/8d53018b560e5035cc6f89378670f9cf7c5bf8037fcd0b266cb0d63da530ebac [none]
+[debug] [2023-01-03T14:28:19.832Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/tsimple-384dd/versions/7ba6151338fb1f4b/files/8d53018b560e5035cc6f89378670f9cf7c5bf8037fcd0b266cb0d63da530ebac [stream]
+[debug] [2023-01-03T14:28:19.833Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/tsimple-384dd/versions/7ba6151338fb1f4b/files/60b982c407a23ea3a312c531a92cb0e1b257fc9715abcc661ec1a8d03dbeae7f [none]
+[debug] [2023-01-03T14:28:19.833Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/tsimple-384dd/versions/7ba6151338fb1f4b/files/60b982c407a23ea3a312c531a92cb0e1b257fc9715abcc661ec1a8d03dbeae7f [stream]
+[debug] [2023-01-03T14:28:19.835Z] [hosting][populate queue][FINAL] {"max":1095,"min":1095,"avg":1095,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1102}
+[debug] [2023-01-03T14:28:19.835Z] [hosting] uploads queued: 4
+[debug] [2023-01-03T14:28:22.028Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/tsimple-384dd/versions/7ba6151338fb1f4b/files/1f2f271f5d0b26cd5da4d406ae4695602b5dd81bc2089c608cbfefcf17426226 200
+[debug] [2023-01-03T14:28:22.029Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/tsimple-384dd/versions/7ba6151338fb1f4b/files/1f2f271f5d0b26cd5da4d406ae4695602b5dd81bc2089c608cbfefcf17426226 [stream]
+[debug] [2023-01-03T14:28:22.120Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/tsimple-384dd/versions/7ba6151338fb1f4b/files/7508bb9128027cd1a81128459ca904ce5b86be7ea95e44500a15f37d8abb592a 200
+[debug] [2023-01-03T14:28:22.120Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/tsimple-384dd/versions/7ba6151338fb1f4b/files/7508bb9128027cd1a81128459ca904ce5b86be7ea95e44500a15f37d8abb592a [stream]
+[debug] [2023-01-03T14:28:35.922Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/tsimple-384dd/versions/7ba6151338fb1f4b/files/8d53018b560e5035cc6f89378670f9cf7c5bf8037fcd0b266cb0d63da530ebac 200
+[debug] [2023-01-03T14:28:35.922Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/tsimple-384dd/versions/7ba6151338fb1f4b/files/8d53018b560e5035cc6f89378670f9cf7c5bf8037fcd0b266cb0d63da530ebac [stream]
+[debug] [2023-01-03T14:29:47.942Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/tsimple-384dd/versions/7ba6151338fb1f4b/files/60b982c407a23ea3a312c531a92cb0e1b257fc9715abcc661ec1a8d03dbeae7f 200
+[debug] [2023-01-03T14:29:47.942Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/tsimple-384dd/versions/7ba6151338fb1f4b/files/60b982c407a23ea3a312c531a92cb0e1b257fc9715abcc661ec1a8d03dbeae7f [stream]
+[debug] [2023-01-03T14:29:47.943Z] [hosting][upload queue][FINAL] {"max":88115,"min":2202,"avg":27176,"active":0,"complete":4,"success":4,"errored":0,"retried":0,"total":4,"elapsed":88116}
+[info] +  hosting[tsimple-384dd]: file upload complete 
+[debug] [2023-01-03T14:29:47.946Z] [hosting] deploy completed after 91037ms
+[debug] [2023-01-03T14:29:47.951Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "tsimple-384dd"
+    },
+    "version": "projects/464046716285/sites/tsimple-384dd/versions/7ba6151338fb1f4b"
+  }
+]
+[info] i  hosting[tsimple-384dd]: finalizing version... 
+[debug] [2023-01-03T14:29:47.955Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tsimple-384dd/versions/7ba6151338fb1f4b updateMask=status%2Cconfig
+[debug] [2023-01-03T14:29:47.955Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tsimple-384dd/versions/7ba6151338fb1f4b {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2023-01-03T14:29:49.420Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tsimple-384dd/versions/7ba6151338fb1f4b 200
+[debug] [2023-01-03T14:29:49.420Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tsimple-384dd/versions/7ba6151338fb1f4b {"name":"projects/464046716285/sites/tsimple-384dd/versions/7ba6151338fb1f4b","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-01-03T14:27:52.668820Z","createUser":{"email":"nuocduaproo@gmail.com"},"finalizeTime":"2023-01-03T14:29:45.391261Z","finalizeUser":{"email":"nuocduaproo@gmail.com"}}
+[debug] [2023-01-03T14:29:49.420Z] [hosting] finalized version for tsimple-384dd:[object Object]
+[info] +  hosting[tsimple-384dd]: version finalized 
+[info] i  hosting[tsimple-384dd]: releasing new version... 
+[debug] [2023-01-03T14:29:49.422Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tsimple-384dd/channels/live/releases versionName=projects%2F464046716285%2Fsites%2Ftsimple-384dd%2Fversions%2F7ba6151338fb1f4b
+[debug] [2023-01-03T14:29:49.422Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tsimple-384dd/channels/live/releases {}
+[debug] [2023-01-03T14:29:50.924Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tsimple-384dd/channels/live/releases 200
+[debug] [2023-01-03T14:29:50.924Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tsimple-384dd/channels/live/releases {"name":"projects/464046716285/sites/tsimple-384dd/channels/live/releases/1672756185955226","version":{"name":"projects/464046716285/sites/tsimple-384dd/versions/7ba6151338fb1f4b","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-01-03T14:27:52.668820Z","createUser":{"email":"nuocduaproo@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AEdFTp4aTbo5M5X-Zdz_hlCak0JoFGfW8rGq_5LuGE68Uw=mo"},"finalizeTime":"2023-01-03T14:29:45.391261Z","finalizeUser":{"email":"nuocduaproo@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AEdFTp4aTbo5M5X-Zdz_hlCak0JoFGfW8rGq_5LuGE68Uw=mo"}},"type":"DEPLOY","releaseTime":"2023-01-03T14:29:45.955226747Z","releaseUser":{"email":"nuocduaproo@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AEdFTp4aTbo5M5X-Zdz_hlCak0JoFGfW8rGq_5LuGE68Uw=mo"}}
+[debug] [2023-01-03T14:29:50.924Z] [hosting] release: {"name":"projects/464046716285/sites/tsimple-384dd/channels/live/releases/1672756185955226","version":{"name":"projects/464046716285/sites/tsimple-384dd/versions/7ba6151338fb1f4b","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-01-03T14:27:52.668820Z","createUser":{"email":"nuocduaproo@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AEdFTp4aTbo5M5X-Zdz_hlCak0JoFGfW8rGq_5LuGE68Uw=mo"},"finalizeTime":"2023-01-03T14:29:45.391261Z","finalizeUser":{"email":"nuocduaproo@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AEdFTp4aTbo5M5X-Zdz_hlCak0JoFGfW8rGq_5LuGE68Uw=mo"}},"type":"DEPLOY","releaseTime":"2023-01-03T14:29:45.955226747Z","releaseUser":{"email":"nuocduaproo@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AEdFTp4aTbo5M5X-Zdz_hlCak0JoFGfW8rGq_5LuGE68Uw=mo"}}
+[info] +  hosting[tsimple-384dd]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/tsimple-384dd/overview
+[info] Hosting URL: https://tsimple-384dd.web.app
+[debug] [2023-01-03T14:30:21.977Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[error] 
+[error] Error: An unexpected error has occurred.

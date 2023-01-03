@@ -20,6 +20,7 @@ export default function Contact1() {
             className="changeClass relative flex justify-center items-center w-full h-[600px] text-white/80"
         >
             <Box
+                checkid={1.5}
                 item={"CONTACT US"}
                 parent={"#movable"}
                 color1="text-gray-300"

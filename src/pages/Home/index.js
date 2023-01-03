@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 function Home() {
+    localStorage.setItem("id_sample", 1);
     const [isHover, setHover] = useState(false);
     const handleMouseEnter = () => {
         setHover(true);
